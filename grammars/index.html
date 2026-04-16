@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+  		<title>Каталог яганского языка</title>
+  		<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Каталогизация данных о яганском языке">
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	  
+  <style>
+Body {
+	background-color: #F0F0FF ;
+	color: #15153B ;
+      }
+
+.navbar {
+	background-color: #22223D; 
+	overflow: hidden;
+        }
+
+.navbar-header a:link {
+	color: #ADADFF; 
+        }
+
+.navbar-header a:hover {
+	color: white;
+	background-color: #5A5A9C; 
+        }
+
+.item a:link {
+	color: #ADADFF; 
+        }
+
+.item a:hover {
+	color: #3030D9; 
+        }
+
+.url a {
+		font-size: xx-small
+		}
+
+  <script src="papaparse.min.js"></script>
+	  
+  </style>  
+	  
+  </head>
+    
+  <body>
+  
+  <nav class="navbar navbar-fixed-top">
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" target="_blank" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<ul class="nav navbar-nav navbar-right"> 
+						<li class="item"> <a href="https://www.hse.ru/org/persons/190921062" target="_blank">Руководитель проекта</a> </li> 
+						<li class="item"> <a href="https://dianaknorre.github.io" target="_blank">Исполнитель проекта</a> </li> 
+				</ul>
+			</div>
+		</nav>
+
+    <header style="background-color: #7587D1; padding-top:70px;">
+
+    <div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+          			</div>
+
+         			<div class="col-md-4">
+          				<h1>Грамматики</h1>
+          				<a href="https://dianaknorre.github.io/yahgan/">Главная</a>
+          			</div>
+          
+          			<div class="col-md-4">
+          			</div>
+  
+				</div>
+	</div>
+	</header>
+	  
+function tabling () {
+  
+  Papa.parse(grammars.csv, {
+    skipEmptyLines: true,
+
+    
+    complete : csv => {
+      
+      var table = grammars.csv("tabling");
+      table.innerHTML = "";
+
+
+      var thead = table.createTHead(),
+          tr = thead.insertRow();
+      for (let cell of csv.data[0]) {
+        let td = tr.insertCell();
+        td.innerHTML = cell;
+      }
+
+
+      var tbody = table.createTBody();
+      for (let i=1; i<csv.data.length; i++) {
+        let row = csv.data[i],
+            tr = tbody.insertRow();
+        for (let cell of row) {
+          let td = tr.insertCell();
+          td.innerHTML = cell;
+        }
+      }
+    }
+  });
+}
+  
+  </body>
+
+</html>
