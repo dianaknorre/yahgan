@@ -6,11 +6,12 @@ date: 1885
 publisher: Maisonneuve frères & C. Leclerc
 place: Paris
 
-название: 
-автор: 
-метаязык: 
+название: Grammaire de la langue jâgane
+автор: Адам, Люсьен
+метаязык: французский
 темы: термины родства, местоимения, категории гендера, категории числа, числа, абстракции, место-временные префиксы, фонетика
 дата: 1885
-издатель: 
+издатель: Maisonneuve frères & C. Leclerc
+город: Париж
 
 Adam L. Grammaire de la langue jâgane. Paris: Maisonneuve frères & C. Leclerc, 1885.
