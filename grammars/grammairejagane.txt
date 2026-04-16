@@ -1,0 +1,16 @@
+title: Grammaire de la langue jâgane
+author: Adam, Lucien
+metalanguage: French
+topics: kinship terms, pronouns, gender categories, number categories, numbers, abstractions, loco-temporal prefixes, phonetics
+date: 1885
+publisher: Maisonneuve frères & C. Leclerc
+place: Paris
+
+название: 
+автор: 
+метаязык: 
+темы: термины родства, местоимения, категории гендера, категории числа, числа, абстракции, место-временные префиксы, фонетика
+дата: 1885
+издатель: 
+
+Adam L. Grammaire de la langue jâgane. Paris: Maisonneuve frères & C. Leclerc, 1885.
