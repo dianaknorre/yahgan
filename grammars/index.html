@@ -82,13 +82,13 @@ Body {
 	  
 function demoC () {
   
-  Papa.parse(grammars.csv, {
+  Papa.parse("grammars.csv", {
     skipEmptyLines: true,
 
     
     complete : csv => {
       
-      var table = grammars.csv("demoC");
+      var table = "grammars.csv"("demoC");
       table.innerHTML = "";
 
 
